@@ -8,7 +8,7 @@
         body {
             text-align: center;
             margin: 20px;
-            background-color: white;
+            background-color: white; /* You can change this to sagegreen if you prefer */
         }
         h1, p {
             color: navy;
@@ -17,11 +17,18 @@
             color: #333;
             font-style: italic;
         }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .profile-img {
             width: 300px;
             height: auto;
-            float: left;
             margin-right: 10px;
+        }
+        .profile-text {
+            text-align: left; /* Align text to the left */
         }
     </style>
 </head>
@@ -31,7 +38,19 @@
 <p>Occidental College Student</p>
 <p>Class of '27</p>
 
-<img src="profile.jpg" alt="Profile Picture" class="profile-img">
+<div class="profile-container">
+    <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+    <div class="profile-text">
+        <p>Major: Undecided</p>
+        <p>Bio:
+            Born and raised in Sacramento, CA, I have lived in California my whole life.
+            Growing up on the west coast, I knew I wanted to stay here for college so I
+            chose Occidental College. The opportunities that Oxy could provide me were
+            endless and I am someone who loves to explore new places, so I moved to LA.
+            Now I am working on figuring out where my passion lies in terms of what I want
+            to study.</p>
+    </div>
+</div>
 
 </body>
 </html>
